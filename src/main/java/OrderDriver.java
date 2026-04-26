@@ -1,12 +1,9 @@
-
-package org.example;
 public class OrderDriver {
     public static void main(String[] args) {
 
-        // 1. Create beverage using Factory
+        // ---- FIRST ORDER ----
         Beverage drink1 = BeverageFactory.createBeverage("latte");
 
-        // 2. Customize using Builder
         drink1 = new BeverageBuilder(drink1)
                 .setSize("Large")
                 .setMilk("Oat")
@@ -14,15 +11,11 @@ public class OrderDriver {
                 .setSweetener("Honey")
                 .build();
 
-        // 3. Create Order
-        Order order1 = new Order(drink1, "Takeaway");
-
-        // 4. Print Order
+        Order order1 = new Order(drink1, new Order.TakeOut());
         order1.printOrder();
 
 
-        // ---- SECOND ORDER (show variety) ----
-
+        // ---- SECOND ORDER ----
         Beverage drink2 = BeverageFactory.createBeverage("tea");
 
         drink2 = new BeverageBuilder(drink2)
@@ -30,7 +23,7 @@ public class OrderDriver {
                 .setSweetener("Sugar")
                 .build();
 
-        Order order2 = new Order(drink2, "Dine-in");
+        Order order2 = new Order(drink2, new Order.DineIn());
         order2.printOrder();
     }
 }

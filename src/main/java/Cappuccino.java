@@ -1,7 +1,6 @@
 package org.example;
 
 public class Cappuccino extends Beverage {
-
     public Cappuccino() {
         name = "Cappuccino";
     }
