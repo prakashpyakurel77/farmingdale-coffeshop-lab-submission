@@ -1,5 +1,3 @@
-package org.example;
-
 public abstract class Beverage implements BeverageCost {
     protected String name;
     protected String size;

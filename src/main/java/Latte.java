@@ -5,6 +5,7 @@ public class Latte extends Beverage {
 
     @Override
     public double cost() {
-        return 3.5;
+        return 6.5;
     }
+    //I'm not sure what the cost should be i just added a random number
 }

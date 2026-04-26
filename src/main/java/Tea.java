@@ -1,5 +1,3 @@
-package org.example;
-
 public class Tea extends Beverage {
     public Tea() {
         name = "Tea";

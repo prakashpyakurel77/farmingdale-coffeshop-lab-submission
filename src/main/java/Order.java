@@ -1,5 +1,3 @@
-package org.example;
-
 public class Order {
     private Beverage beverage;
     private OrderStrat strat;

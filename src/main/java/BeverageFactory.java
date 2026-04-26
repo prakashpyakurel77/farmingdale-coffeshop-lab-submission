@@ -1,5 +1,3 @@
-package org.example;
-
 public class BeverageFactory {
 
     public static Beverage createBeverage(String type) {
