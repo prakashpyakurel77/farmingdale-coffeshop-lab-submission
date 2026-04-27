@@ -6,5 +6,5 @@ This project implements a coffee shop ordering system using design patterns:
 - Order handling system
 
 Created by:
-Prakash Pyakurel
+Prakash Pyakurel and
 Vince Mikel
